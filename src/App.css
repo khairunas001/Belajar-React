@@ -4,7 +4,27 @@
 }
 
 .app-table{
-  width: 50%;
+  width: 75%;
   margin: auto;
 }
 
+.app-table table {
+  width:100%
+}
+
+.app-table table th,
+.app-table table td {
+  padding:8px;
+}
+
+.app-table table tr:hover{
+  background-color: aqua;
+}
+
+.app-form {
+  margin-bottom: 16px;
+}
+
+.app-title{
+  margin-bottom: 16px;
+}

@@ -39,7 +39,12 @@ function Table (props){
                   <tr>
                     <td>{todo.id}</td>
                     <td>{todo.task}</td>
-                    <td>{JSON.stringify(todo.status)}</td>
+                    <td>
+                        {/* {JSON.stringify(todo.status)} */
+                            todo.status ? 'Done' :'In Progress'
+                        }
+
+                    </td>
                   </tr>
                 )
               })
