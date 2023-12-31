@@ -1,42 +1,17 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './App.css';
-import Heading from './components/heading'
+import AppTitle from './components/AppTitle'
+import AppForm from './components/Form';
+import AppTable from './components/Table'
 
 function App() {
-  const [profiles, setProdiles] = useState([
-    {
-      id: 1,
-      name: "Anas",
-      age: 22
-    },
-    {
-      id: 2,
-      name: "Jokowi",
-      age: 90
-    },
-    {
-      id: 3,
-      name: "Soeharto",
-      age: 70
-    },
-    {
-      id: 4,
-      name: "Soekarno",
-      age: 76
-    }
-
-  ])
-
+  
+ 
   return (
     <div className="App">
-      {
-        profiles.map(profile =>{
-
-          return(
-            <Heading profile={profile}></Heading>
-          )
-        })
-      }
+      <AppTitle></AppTitle>
+      <AppForm></AppForm>
+      <AppTable></AppTable>
     </div>
   );
 }
